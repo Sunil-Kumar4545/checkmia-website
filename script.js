@@ -87,6 +87,7 @@ document.querySelectorAll('#links a').forEach(a=>a.addEventListener('click',()=>
       '<p><strong>Photo quality check</strong> ('+usable+' of '+list.length+' usable'+(poor?', '+poor+' poor':'')+')</p><ul class="plist">'+rows+'</ul>'+
       '<p><strong>Missing views:</strong> '+(miss.length?miss.map(esc).join(', '):'none; all 6 views provided')+'</p>'+
       '<p><strong>Next steps:</strong> '+(poor?'retake the poor photos in even light, held steady. ':'')+(miss.length?'Add the missing views. ':'')+'For a real purchase, confirm with the brand’s official store or an authorised reseller.</p>'+
+      '<p><strong>Target accuracy (goal, not measured):</strong> macro-F1 of at least 0.85 on a held-out pilot set, for all supported products. No accuracy has been measured yet.</p>'+
       '<p class="meta">Limitation: this demo measures photo quality only. Judging genuine vs counterfeit needs the trained model and reference data planned for the full project, and would still be indicative, not a guarantee.</p>';
   }
   function run(){
